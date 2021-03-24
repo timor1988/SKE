@@ -60,9 +60,9 @@ def main(fileName, path):
 if __name__ == "__main__":
     # 进行关键词提取的文章
     curPath = fileHandle.get_cur_path()
-    curPath = 'corpus/'
+    curpath = 'corpus/'
     # fileName = '1351409.txt' # bug调试
-    fileName = '个人提升职场玛格丽特101.txt'
+    filename = 'C4-Literature21.txt' # 这种格式的文章有"【",后续会用来进行字符串分割。
 
-    print (json.dumps(main(fileName, curPath), ensure_ascii=False))
+    print (json.dumps(main(filename, curpath), ensure_ascii=False))
 
